@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from pandas.plotting import parallel_coordinates
 
-from moutils.visualization import Plot
+from mootils.visualization import Plot
 
 
 class ParallelCoordinates(Plot):

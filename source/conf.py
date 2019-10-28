@@ -20,9 +20,9 @@ import guzzle_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'moutils'
-copyright = '2019, Antonio Benítez-Hidalgo'
-author = 'Antonio Benítez-Hidalgo'
+project = 'mootils'
+copyright = '2019, mootils team'
+author = 'mootils team'
 
 # The short X.Y version
 version = ''
@@ -98,7 +98,7 @@ html_css_files = [
 #
 # html_theme_options = {}
 html_theme_options = {
-    "project_nav_name": "moutils"
+    "project_nav_name": "mootils"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -125,7 +125,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'moutils'
+htmlhelp_basename = 'mootils'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -152,8 +152,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'moutils.tex', 'Tools for Multi-objective optimization',
-     'Antonio Benítez-Hidalgo', 'manual'),
+    (master_doc, 'mootils.tex', 'Tools for Multi-objective optimization',
+     'mootils team', 'manual'),
 ]
 
 
@@ -162,7 +162,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'moutils', 'Tools for Multi-objective optimization',
+    (master_doc, 'mootils', 'Tools for Multi-objective optimization',
      [author], 1)
 ]
 
@@ -173,8 +173,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'moutils', 'Tools for Multi-objective optimization',
-     author, 'moutils', 'Tools for Multi-objective optimization',
+    (master_doc, 'mootils', 'Tools for Multi-objective optimization',
+     author, 'mootils', 'Tools for Multi-objective optimization',
      'Miscellaneous'),
 ]
 

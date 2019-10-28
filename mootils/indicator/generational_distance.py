@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import spatial
 
-from moutils.indicator import QualityIndicator
+from mootils.indicator import QualityIndicator
 
 
 class GenerationalDistance(QualityIndicator):

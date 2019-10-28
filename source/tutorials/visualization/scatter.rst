@@ -4,7 +4,7 @@ Scatter plot matrix
 API
 ^^^
 
-.. automodule:: moutils.visualization.individual.scatter_plot
+.. automodule:: mootils.visualization.individual.scatter_plot
    :members:
    :undoc-members:
    :show-inheritance:

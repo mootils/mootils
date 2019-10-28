@@ -1,4 +1,4 @@
-# `moutils`: Exploration and analysis in Multi-objective Optimization
+# `mootils`: Exploration and analysis in Multi-objective Optimization
 
 ### Visualization
 

@@ -2,7 +2,7 @@ import importlib
 
 import numpy as np
 
-from moutils.visualization import Plot
+from mootils.visualization import Plot
 
 
 class ScatterPlot(Plot):
