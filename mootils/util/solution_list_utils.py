@@ -1,7 +1,6 @@
-from pathlib import Path
+import logging
 
 import numpy as np
-import logging
 
 LOGGER = logging.getLogger('mootils')
 
