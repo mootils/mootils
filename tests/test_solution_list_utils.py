@@ -4,9 +4,9 @@ import unittest
 from numpy.testing import assert_raises
 from mootils.util.solution_list_utils import read_solutions_from_file
 
-
 root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 path_to_pf = os.path.join(root, "resources", "paretofronts")
+
 
 class SolutionListUtilsTestCases(unittest.TestCase):
 
