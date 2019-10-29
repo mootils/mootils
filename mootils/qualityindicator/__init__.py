@@ -11,8 +11,8 @@ class QualityIndicator(ABC):
         Parameters
         ----------
         solutions : numpy.array
-            [m, n] bi-dimensional numpy array, being m the number of solutions and n the dimension
-            of each solution
+            [m, n] bi-dimensional numpy array, being m the number of solutions and n the dimension of each solution
+
         Returns
         -------
         float
