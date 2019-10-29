@@ -6,7 +6,7 @@ import numpy as np
 class QualityIndicator(ABC):
 
     @abstractmethod
-    def compute(self, solutions: np.array, **kwargs):
+    def compute(self, solutions: np.array, **kwargs) -> float:
         """
         Parameters
         ----------
