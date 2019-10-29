@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import spatial
 
-from mootils.qualityindicator import QualityIndicator
+from mootils.qualityindicator.quality_indicator import QualityIndicator
 
 
 class InvertedGenerationalDistance(QualityIndicator):

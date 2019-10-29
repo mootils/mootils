@@ -1,6 +1,6 @@
 import numpy as np
 
-from mootils.qualityindicator import QualityIndicator
+from mootils.qualityindicator.quality_indicator import QualityIndicator
 
 
 class EpsilonIndicator(QualityIndicator):
