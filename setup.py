@@ -1,3 +1,4 @@
+import setuptools
 from setuptools import setup
 
 from mootils.version import __version__
@@ -13,7 +14,7 @@ __url__ = ""
 __email__ = ""
 
 __licence__ = ""
-#__licence__ = "Apache License 2.0"
+# __licence__ = "Apache License 2.0"
 
 data = dict(
     name=__name__,
@@ -27,7 +28,6 @@ data = dict(
     keywords="optimization",
     install_requires=['numpy>=1.15', 'pandas', 'matplotlib', 'scipy'],
     platforms='any',
-    packages=['mootils', 'mootils.analysis', 'mootils.qualityindicator', 'mootils.visualization'],
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
@@ -50,14 +50,17 @@ data = dict(
 # ---------------------------------------------------------------------------------------------------------
 
 
-# update the readme.rst to be part of setup
 def readme():
     with open('README.md') as f:
         return f.read()
 
 
-data['long_description'] = readme()
+def packages():
+    return sorted(["mootils"] + ["mootils." + e for e in setuptools.find_packages(where='mootils')])
 
+
+data['packages'] = packages()
+data['long_description'] = readme()
 
 # ---------------------------------------------------------------------------------------------------------
 # RUN
