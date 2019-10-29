@@ -8,9 +8,15 @@ class QualityIndicator(ABC):
     @abstractmethod
     def compute(self, solutions: np.array, **kwargs):
         """
-        :param solutions: [m, n] bi-dimensional numpy array, being ``m`` the number of solutions and ``n`` the dimension
-        of each solution.
-        :return: The result value of the quality indicator.
+        Parameters
+        ----------
+        solutions : numpy.array
+            [m, n] bi-dimensional numpy array, being m the number of solutions and n the dimension
+            of each solution
+        Returns
+        -------
+        float
+            The value of the quality indicator
         """
         pass
 
