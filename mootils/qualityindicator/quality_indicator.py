@@ -6,12 +6,14 @@ import numpy as np
 class QualityIndicator(ABC):
 
     @abstractmethod
-    def compute(self, solutions: np.array, **kwargs) -> float:
+    def compute(self, front: np.array, **kwargs) -> float:
         """
         Parameters
         ----------
-        solutions : numpy.array
-            [m, n] bi-dimensional numpy array, being m the number of solutions and n the dimension of each solution
+        front : numpy.array
+            [M, N] bi-dimensional float numpy array, being m the number of vectors and n the dimension of each of them.
+            In the general case, a front represents a Pareto front approximation, so m would be the number of objective
+            vectors and n the number of objectives.
 
         Returns
         -------
