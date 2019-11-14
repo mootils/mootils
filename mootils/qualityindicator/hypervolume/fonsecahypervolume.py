@@ -1,5 +1,7 @@
-from mootils.qualityindicator.quality_indicator import QualityIndicator
 import numpy as np
+
+from mootils.qualityindicator.quality_indicator import QualityIndicator
+
 
 class FonsecaHyperVolume(QualityIndicator):
     """ Hypervolume computation based on variant 3 of the algorithm in the paper:
@@ -153,7 +155,7 @@ class FonsecaHyperVolume(QualityIndicator):
 
 
 class MultiList:
-    """A special front structure needed by FonsecaHyperVolume.
+    """A special front structure needed by class FonsecaHyperVolume.
 
     It consists of several doubly linked lists that share common nodes. So,
     every node has multiple predecessors and successors, one in every list.
