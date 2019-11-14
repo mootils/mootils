@@ -14,11 +14,11 @@ class GenerationalDistance(QualityIndicator):
         super(GenerationalDistance, self).__init__()
         self.reference_front = reference_front
 
-    def compute(self, solutions: np.array, **kwargs) -> np.ndarray:
+    def compute(self, front: np.array, **kwargs) -> np.ndarray:
         if self.reference_front is None:
             raise Exception('Reference front is none')
 
-        distances = spatial.distance.cdist(solutions, self.reference_front)
+        distances = spatial.distance.cdist(front, self.reference_front)
 
         return np.mean(np.min(distances, axis=1))
 
