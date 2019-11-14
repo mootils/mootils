@@ -34,7 +34,8 @@ def normalize(vector: np.array, min_values: np.array = None, max_values:np.array
     denominator = max_values - min_values
 
     # we cannot divide by zero
-    #if denominator == 0:
-    #    raise Exception("Error normalizing vector: the maximum and minimum values are equal")
+    for x in denominator:
+        if x == 0:
+            raise Exception("Error normalizing vector: the maximum and minimum values are equal")
 
     return (vector - min_values) / denominator
