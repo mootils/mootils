@@ -10,7 +10,7 @@ class InvertedGenerationalDistance(QualityIndicator):
         super(InvertedGenerationalDistance, self).__init__()
         self.reference_front = reference_front
 
-    def compute(self, front: np.array, **kwargs) -> np.ndarray:
+    def compute(self, front: np.array, **kwargs) -> float:
         if self.reference_front is None:
             raise Exception('Reference front is none')
 
